@@ -1,8 +1,13 @@
-# React + Vite
+Una estructura de carpetas escalable para una aplicación React podría ser la siguiente:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esta estructura de carpetas divide el código en varias carpetas basadas en su función:
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+components: Contiene todos los componentes reutilizables.
+containers: Contiene componentes que representan páginas completas.
+hooks: Contiene todos los hooks personalizados.
+services: Contiene servicios como funciones de API y autenticación.
+utils: Contiene funciones de utilidad.
+styles: Contiene todos los archivos de estilos globales y específicos de los componentes.
+types: Contiene todos los tipos y las interfaces.
+store: Contiene todo lo relacionado con la gestión del estado (como Redux o Zustand), incluyendo acciones y reductores.
+Cada componente, contenedor y servicio tiene su propio directorio con su archivo de código y su archivo de prueba. Esto facilita la organización y el mantenimiento del código a medida que tu aplicación crece.
