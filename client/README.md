@@ -1,30 +1,13 @@
-# React + TypeScript + Vite
+Una estructura de carpetas escalable para una aplicación React podría ser la siguiente:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esta estructura de carpetas divide el código en varias carpetas basadas en su función:
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+components: Contiene todos los componentes reutilizables.
+containers: Contiene componentes que representan páginas completas.
+hooks: Contiene todos los hooks personalizados.
+services: Contiene servicios como funciones de API y autenticación.
+utils: Contiene funciones de utilidad.
+styles: Contiene todos los archivos de estilos globales y específicos de los componentes.
+types: Contiene todos los tipos y las interfaces.
+store: Contiene todo lo relacionado con la gestión del estado (como Redux o Zustand), incluyendo acciones y reductores.
+Cada componente, contenedor y servicio tiene su propio directorio con su archivo de código y su archivo de prueba. Esto facilita la organización y el mantenimiento del código a medida que tu aplicación crece.
